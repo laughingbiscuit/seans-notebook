@@ -1,0 +1,15 @@
+@startsalt
+{
+{
+  |{1 2 3 Window Name        01/01/2022 - 100%}
+  |---
+
+}
+{SI
+  ~ $ cowsay "Hello World"
+  
+  .
+  "                               "
+}
+}
+@endsalt
