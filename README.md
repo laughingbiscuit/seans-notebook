@@ -4,3 +4,6 @@ A place for Sean to store all of his notes as code. To keep things simple, every
 
 # Assets
 Given that all assets are static, they could be hosted as GitHub Actions artifacts or on GitHub Pages.
+
+# Comments
+Lets allow comments via GitHub issues using [this](https://github.com/utterance/utterances)
