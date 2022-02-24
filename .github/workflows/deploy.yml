@@ -12,6 +12,7 @@ jobs:
 
       - name: Build
         run: |
+          sudo apt-get install -y pandoc
           sh generate.sh
 
       - name: Deploy
