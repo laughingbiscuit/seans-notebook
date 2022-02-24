@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-for FILE in ls *.md; do
+for FILE in `ls *.md`; do
   OUT="./dist/$(echo $FILE | sed 's/\.md$/\.html/')"
   pandoc -s $FILE -o $OUT
   sed -i 's/<head>/<head><link rel="stylesheet" href="https:\/\/cdn.jsdelivr.net\/npm\/water.css@2\/out\/light.css">/' $OUT
