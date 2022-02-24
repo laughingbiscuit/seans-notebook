@@ -13,11 +13,11 @@ jobs:
       - name: Build
         run: |
           sudo apt-get install -y pandoc
+          mkdir -p dist
           sh generate.sh
-          ls
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           branch: gh-pages
-          folder: .
+          folder: dist
